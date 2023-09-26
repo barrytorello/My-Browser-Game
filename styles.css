@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(110, 110, 117);
+}
+
+h1 {
+    background-color: black;
+    padding: 15px 30px;
+    font-weight: 200; 
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.field {
+    background-size: cover;
+    background-image: url(Phttps://www.pexels.com/photo/selective-focus-close-up-photo-of-brown-wilson-pigskin-football-on-green-grass-2570139/;)
+    position: relative;
+}
+
+
+/* cursor: pointer; */
