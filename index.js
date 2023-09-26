@@ -14,7 +14,7 @@ function showQuestion (q) {
     alts.forEach(function(element, index){
         element.textContent = q.alternatives[index];
     });
-    console.log
+    console.log(alts)
 }
 
 showQuestion(question);
