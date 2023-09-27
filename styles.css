@@ -1,5 +1,5 @@
 html {
-    font: ;
+    font: 'Roboto';
 }
 
 body {
@@ -8,17 +8,18 @@ body {
 }
 
 img {
+    background-repeat: repeat;
     opacity: .5;
-
 }
+
 h1 {
     padding: 15px 30px;
     font-weight: 200; 
     font-size: 50px;
     color: white;
     text-align: center;
-  
-  }
+    background-color: black;
+}
 
 h2 {
     color: white;
@@ -27,23 +28,22 @@ h2 {
     padding: 375px;
   }
 
-.field {
-    background-size: cover;
-  
-  }
-
 .section {
 
   }
 
 .qbox {
     display: flex;
-    margin-top: 250px;
     justify-content: center;
-    align-items: center;
-    background-color: black;
+    background-color: gray;
     color: white;
-  }
+    width: 800px;
+    padding: 40px;
+    font-size: 30px;
+    border-radius: 25px;
+    border: 5px solid black;
+    margin: auto; 
+}
 
 .nav{
     background-color: black;
