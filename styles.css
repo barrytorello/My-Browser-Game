@@ -1,13 +1,21 @@
-body {
-    background-color: rgb(110, 110, 117);
-  }
+html {
+    font: ;
+}
 
+body {
+    background-image: /* Photo by Pixabay from Pexels */ url(https://images.pexels.com/photos/209956/pexels-photo-209956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size:25%;
+}
+
+img {
+    opacity: .5;
+
+}
 h1 {
     padding: 15px 30px;
     font-weight: 200; 
     font-size: 50px;
     color: white;
-    background-image: url(Phttps://www.pexels.com/photo/selective-focus-close-up-photo-of-brown-wilson-pigskin-football-on-green-grass-2570139/;);
     text-align: center;
   
   }
@@ -54,4 +62,8 @@ h2 {
 .button-grid {
     text-align: center;
   }
+
+.button {
+    border: red;
+}
 /* cursor: pointer; */
