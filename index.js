@@ -12,4 +12,8 @@ function myFunction() {
   }
 }
 
+function myFunction() {
+    document.getElementById("answers").innerHTML = "Incorrect";
+  }
+
 let quizbox1
