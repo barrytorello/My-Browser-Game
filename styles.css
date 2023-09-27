@@ -1,21 +1,57 @@
 body {
     background-color: rgb(110, 110, 117);
-}
+  }
 
 h1 {
-    background-color: black;
     padding: 15px 30px;
     font-weight: 200; 
     font-size: 50px;
     color: white;
+    background-image: url(Phttps://www.pexels.com/photo/selective-focus-close-up-photo-of-brown-wilson-pigskin-football-on-green-grass-2570139/;);
     text-align: center;
-}
+  
+  }
+
+h2 {
+    color: white;
+    display: inline;
+    text-align: center;
+    padding: 375px;
+  }
 
 .field {
     background-size: cover;
-    background-image: url(Phttps://www.pexels.com/photo/selective-focus-close-up-photo-of-brown-wilson-pigskin-football-on-green-grass-2570139/;)
-    position: relative;
-}
+  
+  }
 
+.section {
 
+  }
+
+.qbox {
+    display: flex;
+    margin-top: 250px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+  }
+
+.nav{
+    background-color: black;
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.sticky + .content {
+    padding-top: 60px;
+  }
+
+.button-grid {
+    text-align: center;
+  }
 /* cursor: pointer; */

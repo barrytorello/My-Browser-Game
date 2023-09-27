@@ -1,20 +1,15 @@
-let question = {
-    title: 'How many teams are in the NFL?',
-    alternatives: ['23', '32', '31', '30'],
-    correctAnswer: 2
-};
+window.onscroll = function() {myFunction()};
 
-function showQuestion (q) {
-    titleDiv = document.getElementById('title');
+var navbar = document.getElementById("navbar");
 
-    titleDiv.textContent = q.title;
+var sticky = navbar.offsetTop;
 
-    let alts = document.querySelectorAll('.alternative');
-
-    alts.forEach(function(element, index){
-        element.textContent = q.alternatives[index];
-    });
-    console.log(alts)
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
 
-showQuestion(question);
+let quizbox1
