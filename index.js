@@ -1,7 +1,5 @@
 window.onscroll = function() {myFunction()};
-
 var navbar = document.getElementById("navbar");
-
 var sticky = navbar.offsetTop;
 
 function myFunction() {
@@ -13,7 +11,7 @@ function myFunction() {
 }
 
 function myFunction() {
-    document.getElementById("answers").innerHTML = "Incorrect";
-  }
+  document.getElementById("answers").innerHTML = "Correct!";
+}
 
 let quizbox1
