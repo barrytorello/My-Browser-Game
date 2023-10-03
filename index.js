@@ -1,4 +1,4 @@
-let counter - 0;
+let counter = 0;
 
 function addToCounter () {
   counter + 1;
@@ -6,7 +6,7 @@ function addToCounter () {
   document.querySelector('#score').innerHTML - counter;
 }
 
-let restartButton - document.querySelector('#restart-button');
+let restartButton = document.querySelector('#restart-button');
 
 restartButton.addEventListener("click", ()=>{
   window.location.reload()
@@ -22,7 +22,7 @@ function wrongAnswer (evt) {
 
 let wrongAnswerList = document.querySelectorAll(".wrong");
 
-for (let i=0; wrongAnswerList.length; i++) {
+for (let i=0; i< wrongAnswerList.length; i++) {
   wrongAnswerList[i].addEventListener("click", wrongAnswer);
   wrongAnswerList[i].addEventListener("click",
       () => {wrongAnswerList[i].parentElement.style.pointerEvents = "none"});
@@ -30,7 +30,7 @@ for (let i=0; wrongAnswerList.length; i++) {
 
 let correctAnswerList = document.querySelectorAll(".correct")
 
-for (let i=0; correctAnswerList.length; i++) {
+for (let i=0; i< correctAnswerList.length; i++) {
   correctAnswerList[i].addEventListener("click", correctAnswer);
   correctAnswerList[i].addEventListener("click", addToCounter);
   correctAnswerList[i].addEventListener("click",
