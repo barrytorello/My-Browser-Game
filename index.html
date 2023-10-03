@@ -9,8 +9,11 @@
 </head>
 
 <nav id="navbar" class="nav">
-    <h2>Score: /8</h2> 
-    <h2>Question: /8</h2> 
+    <h2>Score: /8</h2>
+    <h2 id="#score">0</h2> 
+    <div id="restart-button"> 
+        <button>Restart</button> 
+    </div>
 </nav>
 
 <div class=".field"><h1>Football Trivia Game</h1></div>
@@ -20,10 +23,10 @@
         <div id="question-container">
         <div id="question" class="section">How many teams are in the NFL?</div>
         <div id="answers" class="button-grid">
-            <button onclick="myFunction">31</button>
-            <button onclick="myFunction">32</button>   
-            <button onclick="myFunction">23</button>
-            <button onclick="myFunction">30</button>
+            <button class="wrong">31</button>
+            <button class="correct">32</button>   
+            <button class="wrong">23</button>
+            <button class="wrong">30</button>
         </div>
         </div>
     </div>
@@ -32,10 +35,10 @@
         <div id="question-container">
         <div id="question" class="section">How many points are earned for a touchdown?</div>
         <div id="answers" class="button-grid">
-            <button onclick="myFunction">6</button>
-            <button onclick="myFunction">7</button>   
-            <button onclick="myFunction">5</button>
-            <button onclick="myFunction">8</button>
+            <button class="correct">6</button>
+            <button class="wrong">7</button>   
+            <button class="wrong">5</button>
+            <button class="wrong">8</button>
         </div>
         </div>
     </div>
@@ -44,10 +47,10 @@
         <div id="question-container">
         <div id="question" class="section">What is the position called for the person who throws the ball?</div>
         <div id="answers" class="button-grid">
-            <button onclick="myFunction">Center</button>
-            <button onclick="myFunction">Tight End</button>   
-            <button onclick="myFunction">Quarterback</button>
-            <button onclick="myFunction">Kicker</button>
+            <button class="wrong">Center</button>
+            <button class="wrong">Tight End</button>   
+            <button class="correct">Quarterback</button>
+            <button class="wrong">Kicker</button>
         </div>
         </div>
     </div>
@@ -56,10 +59,10 @@
         <div id="question-container">
         <div id="question" class="section">How many Total Players should be on the field at all times?</div>
         <div id="answers" class="button-grid">
-            <button onclick="myFunction">35</button>
-            <button onclick="myFunction">11</button>   
-            <button onclick="myFunction">20</button>
-            <button onclick="myFunction">22</button>
+            <button class="wrong">35</button>
+            <button class="wrong">11</button>   
+            <button class="wrong">20</button>
+            <button class="correct">22</button>
         </div>
         </div>
     </div>
@@ -68,10 +71,10 @@
         <div id="question-container">
         <div id="question" class="section">Where is the Hall of Fame located?</div>
         <div id="answers" class="button-grid">
-            <button onclick="myFunction">Hawaii</button>
-            <button onclick="myFunction">Pennsylvania</button>   
-            <button onclick="myFunction">Ohio</button>
-            <button onclick="myFunction">Nevada</button>
+            <button class="wrong">Hawaii</button>
+            <button class="wrong">Pennsylvania</button>   
+            <button class="correct">Ohio</button>
+            <button class="wrong">Nevada</button>
         </div>
         </div>
     </div>
@@ -80,10 +83,10 @@
         <div id="question-container">
         <div id="question" class="section">Who holds the record for the most passing yards of all time?</div>
         <div id="answers" class="button-grid">
-            <button onclick="myFunction">Drew Brees</button>
-            <button onclick="myFunction">Tom Brady</button>   
-            <button onclick="myFunction">Steve Young</button>
-            <button onclick="myFunction">Peyton Manning</button>
+            <button class="wrong">Drew Brees</button>
+            <button class="correct">Tom Brady</button>   
+            <button class="wrong">Steve Young</button>
+            <button class="wrong">Peyton Manning</button>
         </div>
         </div>
     </div>
@@ -92,10 +95,10 @@
         <div id="question-container">
         <div id="question" class="section">Who holds the record for the most receiving yards of all time?</div>
         <div id="answers" class="button-grid">
-            <button onclick="myFunction">Jerry Rice</button>
-            <button onclick="myFunction">Larry Fitzgerald</button>   
-            <button onclick="myFunction">Randy Moss</button>
-            <button onclick="myFunction">Calvin Johnson</button>
+            <button class="correct">Jerry Rice</button>
+            <button class="wrong">Larry Fitzgerald</button>   
+            <button class="wrong">Randy Moss</button>
+            <button class="wrong">Calvin Johnson</button>
         </div>
         </div>
     </div>
@@ -104,10 +107,10 @@
         <div id="question-container">
         <div id="question" class="section">Who holds the record for the most rushing yards of all time?</div>
         <div id="answers" class="button-grid">
-            <button onclick="myFunction">Bo Jackson</button>
-            <button onclick="myFunction">Adrian Peterson</button>   
-            <button onclick="myFunction">Walter Payton</button>
-            <button onclick="myFunction">Emmitt Smith</button>
+            <button class="wrong">Bo Jackson</button>
+            <button class="wrong">Adrian Peterson</button>   
+            <button class="wrong">Walter Payton</button>
+            <button class="correct">Emmitt Smith</button>
         </div>
         </div>
     </div>

@@ -62,20 +62,23 @@ const Questions = [{
      { text: "Emmitt Smith", isCorrect: true }
 ]},
 ]
+
 window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
+  if (window.scrollY >= sticky) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
   }
 }
 
-function myFunction() {
-  document.getElementById("answers").innerHTML = "Correct!";
-}
+let counter - 0;
 
-let quizbox1
+function addToCounter () {
+  counter + 1;
+  console.log(counter);
+  document.querySelector('#score').innerHTML - counter;
+}
