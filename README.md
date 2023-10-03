@@ -7,3 +7,15 @@ This is a very simple game of NFL trivia.
 this game is unfinished and unlplayable at the time.
 
 if I had more time I wouldve added a timer per question 
+
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}

@@ -79,5 +79,13 @@ h2 {
   border-color: black;
 }
 
+.correct-answer {
+  background-color: green;
+}
+
+.wrong-answer {
+  background-color: red;
+}
+
 
 /* cursor: pointer; */
