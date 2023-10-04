@@ -1,21 +1,29 @@
-let counter = 0;
+//score 
+let score = 0;
 
-function addToCounter () {
-  counter + 1;
-  console.log(counter);
-  document.querySelector('#score').innerHTML - counter;
+function increaseScore () {
+  score += 1;
+  updateScore();
 }
 
-let restartButton = document.querySelector('#restart-button');
+function updateScore() {
+  const scoreElement = document.getElementById("#score");
+  scoreElement.textContent = "Score: " + score;
+}
+
+// reset button
+let restartButton = document.querySelector('#reset');
 
 restartButton.addEventListener("click", ()=>{
   window.location.reload()
 })
 
+//correct answer function
 function correctAnswer (evt) {
   evt.target.classList.add('correct-answer')
 }
 
+//wrong answer function and for
 function wrongAnswer (evt) {
   evt.target.classList.add('wrong-answer')
 }
@@ -28,11 +36,12 @@ for (let i=0; i< wrongAnswerList.length; i++) {
       () => {wrongAnswerList[i].parentElement.style.pointerEvents = "none"});
 }
 
+//correct answer 
 let correctAnswerList = document.querySelectorAll(".correct")
 
 for (let i=0; i< correctAnswerList.length; i++) {
   correctAnswerList[i].addEventListener("click", correctAnswer);
-  correctAnswerList[i].addEventListener("click", addToCounter);
+  correctAnswerList[i].addEventListener("click", increaseScore);
   correctAnswerList[i].addEventListener("click",
       () => {correctAnswerList[i].parentElement.style.pointerEvents = "none"});
 }
