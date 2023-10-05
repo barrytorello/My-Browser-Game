@@ -86,5 +86,11 @@ button {
   color: white;
 }
 
-
+.instructions {
+  font-family: 'Work Sans', sans-serif;
+  margin-right: auto;
+  margin-left: 0;
+  text-align: center;
+  width: 500px;
+}
 /* cursor: pointer; */

@@ -45,3 +45,7 @@ for (let i=0; i< correctAnswerList.length; i++) {
   correctAnswerList[i].addEventListener("click",
       () => {correctAnswerList[i].parentElement.style.pointerEvents = "none"});
 }
+
+//pass or fail function
+
+var status = (marks >= 6) ? "Pass" : "Fail";
